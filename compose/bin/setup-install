@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -o errexit
 
-DOMAIN=${1:-svhr-ecom}
+DOMAIN=${1:-microware.svhr-ecom}
 
 # shellcheck source=../env/db.env
 source env/db.env
