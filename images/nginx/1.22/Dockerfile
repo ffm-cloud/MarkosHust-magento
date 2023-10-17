@@ -1,4 +1,4 @@
-FROM nginx:1.18-alpine
+FROM nginx:1.22
 MAINTAINER Mark Shust <mark@shust.com>
 
 ARG APP_ID=1000

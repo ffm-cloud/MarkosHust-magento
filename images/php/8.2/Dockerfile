@@ -1,5 +1,5 @@
 FROM php:8.2-fpm-bullseye
-MAINTAINER Mark Shust <mark@shust.com>
+#MAINTAINER Mark Shust <mark@shust.com>
 
 ARG APP_ID=1000
 RUN groupadd -g "$APP_ID" app \
