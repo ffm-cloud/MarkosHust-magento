@@ -38,7 +38,7 @@ services:
     #extra_hosts: *appextrahosts
 
   db:
-    image: mariadb:latest
+    image: mariadb:10.4
     command:
       --max_allowed_packet=64M
       --optimizer_use_condition_selectivity=1
