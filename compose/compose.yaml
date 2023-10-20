@@ -32,13 +32,13 @@ services:
       #- "host.docker.internal:host-gateway"
 
   phpfpm:
-    image: bitnami/php-fpm:8.2.11-debian-11-r8
+    image: php:8.2.12RC1-fpm-bullseye
     volumes: *appvolumes
     env_file: env/phpfpm.env
     #extra_hosts: *appextrahosts
 
   db:
-    image: mariadb:10.6.12
+    image: mariadb:latest
     command:
       --max_allowed_packet=64M
       --optimizer_use_condition_selectivity=1
